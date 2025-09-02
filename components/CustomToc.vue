@@ -34,7 +34,8 @@ function filterPageNumber(nav) {
     (v) =>
       v.no !== 1 &&
       !v.meta?.slide?.frontmatter?.skipInToc &&
-      layoutsIncludeInToc.includes(v.meta?.layout ?? "default")
+      (v.meta?.slide?.frontmatter?.includeInToc ||
+      layoutsIncludeInToc.includes(v.meta?.layout ?? "default"))
   );
   const filteredPageNumbers = filteredPages.map((v) => v.no);
   const filteredTocTree = nav.tocTree.filter((v) =>
