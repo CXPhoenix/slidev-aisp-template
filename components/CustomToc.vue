@@ -2,7 +2,7 @@
 import { useSlideContext } from "@slidev/client";
 
 const props = defineProps({
-  tocLayoutIncludes: {
+  layoutsIncludeInToc: {
     type: Array,
     default: ["section", "default", "image"],
     validator: (value, props) =>
@@ -26,11 +26,15 @@ const { $slidev } = useSlideContext();
  */
 function filterPageNumber(nav) {
   const slides = nav.slides;
+  let layoutsIncludeInToc = slides[0]?.meta?.slide?.frontmatter?.layoutsIncludeInToc ?? props.layoutsIncludeInToc;
+  if (typeof layoutsIncludeInToc !== typeof Array()) {
+    layoutsIncludeInToc = [layoutsIncludeInToc];
+  }
   const filteredPages = slides.filter(
     (v) =>
       v.no !== 1 &&
-      !v.meta?.slide?.frontmatter?.skipToc &&
-      props.tocLayoutIncludes.includes(v.meta?.layout ?? "default")
+      !v.meta?.slide?.frontmatter?.skipInToc &&
+      layoutsIncludeInToc.includes(v.meta?.layout ?? "default")
   );
   const filteredPageNumbers = filteredPages.map((v) => v.no);
   const filteredTocTree = nav.tocTree.filter((v) =>
