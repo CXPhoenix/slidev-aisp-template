@@ -52,7 +52,7 @@ jobs:
 
       # 步驟 4: 使用 pnpm 執行 Slidev
       - name: Export PDF
-        run: pnpm slidev export --output slides.pdf
+        run: pnpm slidev export --timeout 120000 --with-clicks true --output slides.pdf
 
       # 附加 PDF 到本次 Release (此步驟不需變更)
       - name: Attach PDF to Release
