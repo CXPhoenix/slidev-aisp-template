@@ -3,6 +3,9 @@
 [![GitHub Template](https://img.shields.io/badge/GitHub-Use%20Template-brightgreen?style=flat-square&logo=github)](https://github.com/cxphoenix/slidev-repo-template/generate)
 [![Slidev](https://img.shields.io/badge/Slidev-v52.1.0-blue?style=flat-square&logo=vue.js)](https://sli.dev)
 [![Vue 3](https://img.shields.io/badge/Vue-3.5.18-4FC08D?style=flat-square&logo=vue.js)](https://vuejs.org)
+[![Slidev Theme - FHSH AiSP Theme](https://img.shields.io/npm/v/%40cxphoenix%2Fslidev-theme-fhsh-aisp?style=flat-square&logo=npm&label=%40cxphoenix%2Fslidev-theme-fhsh-aisp)](https://www.npmjs.com/package/@cxphoenix/slidev-theme-fhsh-aisp)
+[![@cxphoenix/slidev-addon-python-runner Version](https://img.shields.io/npm/v/%40cxphoenix%2Fslidev-addon-python-runner?style=flat-square&logo=npm&label=%40cxphoenix%2Fslidev-addon-python-runner)](https://www.npmjs.com/package/@cxphoenix/slidev-addon-python-runner)
+[![NPM Version](https://img.shields.io/npm/v/slidev-addon-tldraw?style=flat-square&logo=npm&label=slidev-addon-tldraw)](https://www.npmjs.com/package/slidev-addon-tldraw)
 [![CC BY 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 
 > 專為開發者設計的現代化簡報模板，基於 Slidev 框架，使用 Markdown 語法快速建立專業簡報
