@@ -1,5 +1,6 @@
 {
-  "name": "slidev-aisp-template",
+  "name": "slidev-fhsh-isiphs-template",
+  "version": "1.2.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,15 +9,13 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@cxphoenix/slidev-addon-python-runner": "^1.0.0",
-    "@cxphoenix/slidev-theme-fhsh-aisp": "^1.2.0",
-    "@slidev/cli": "^52.1.0",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
-    "slidev-addon-tldraw": "^0.4.2",
-    "vue": "^3.5.18"
+    "@cxphoenix/slidev-addon-python-runner": "0.5.0",
+    "@cxphoenix/slidev-theme-fhsh-isiphs-universal": "1.0.1",
+    "@slidev/cli": "52.2.4",
+    "slidev-addon-tldraw": "0.4.2",
+    "vue": "3.5.22"
   },
   "devDependencies": {
-    "playwright-chromium": "^1.55.0"
+    "playwright-chromium": "1.55.1"
   }
 }

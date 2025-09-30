@@ -1,15 +1,11 @@
 ---
-theme: '@cxphoenix/slidev-theme-fhsh-aisp'
+theme: '@cxphoenix/slidev-theme-fhsh-isiphs-universal'
+themeName: fhsh
+courseLevel: 0
 addons:
   - '@cxphoenix/slidev-addon-python-runner'
   - tldraw
 title: AiSP Slidev 模板
-fonts:
-  sans: 'edukai, Noto Sans Traditional Chinese, Roboto'
-  serif: 'Zen Antique, edukai, Noto Serif Traditional Chinese'
-  mono: 'Source Code Pro, Noto Sans Mono'
-  local:
-    - edukai
 drawings:
   persist: false
 transition: slide-left

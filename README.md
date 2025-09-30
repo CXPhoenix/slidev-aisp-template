@@ -1,9 +1,9 @@
-# Slidev FHSH AiSP 簡報模板
+# Slidev FHSH ISiPHS Universal 簡報模板
 
 [![GitHub Template](https://img.shields.io/badge/GitHub-Use%20Template-brightgreen?style=flat-square&logo=github)](https://github.com/cxphoenix/slidev-repo-template/generate)
-[![Slidev](https://img.shields.io/badge/Slidev-v52.1.0-blue?style=flat-square&logo=vue.js)](https://sli.dev)
-[![Vue 3](https://img.shields.io/badge/Vue-3.5.18-4FC08D?style=flat-square&logo=vue.js)](https://vuejs.org)
-[![Slidev Theme - FHSH AiSP Theme](https://img.shields.io/npm/v/%40cxphoenix%2Fslidev-theme-fhsh-aisp?style=flat-square&logo=npm&label=%40cxphoenix%2Fslidev-theme-fhsh-aisp)](https://www.npmjs.com/package/@cxphoenix/slidev-theme-fhsh-aisp)
+[![Slidev](https://img.shields.io/badge/Slidev-v52.2.4-blue?style=flat-square&logo=vue.js)](https://sli.dev)
+[![Vue 3](https://img.shields.io/badge/Vue-3.5.22-4FC08D?style=flat-square&logo=vue.js)](https://vuejs.org)
+[![Slidev Theme - FHSH ISiPHS Universal Theme](https://img.shields.io/npm/v/%40cxphoenix%2Fslidev-theme-fhsh-isiphs-universal?style=flat-square&logo=npm&label=%40cxphoenix%2Fslidev-theme-fhsh-isiphs-universal)](https://www.npmjs.com/package/@cxphoenix/slidev-theme-fhsh-isiphs-universal)
 [![@cxphoenix/slidev-addon-python-runner Version](https://img.shields.io/npm/v/%40cxphoenix%2Fslidev-addon-python-runner?style=flat-square&logo=npm&label=%40cxphoenix%2Fslidev-addon-python-runner)](https://www.npmjs.com/package/@cxphoenix/slidev-addon-python-runner)
 [![NPM Version](https://img.shields.io/npm/v/slidev-addon-tldraw?style=flat-square&logo=npm&label=slidev-addon-tldraw)](https://www.npmjs.com/package/slidev-addon-tldraw)
 [![CC BY 4.0](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
@@ -41,7 +41,7 @@ Slidev (slide + dev) 是一個基於 Web 的簡報製作與演示工具，具有
 ## ✨ 主要特色
 
 - **🚀 一鍵部署**：預設 Netlify 和 Vercel 部署設定
-- **🎨 專業主題**：使用 `@cxphoenix/slidev-theme-fhsh-aisp` 主題
+- **🎨 專業主題**：使用 `@cxphoenix/slidev-theme-fhsh-isiphs-universal` 主題
 - **🧩 自訂元件**：包含目錄元件（CustomToc.vue）
 - **📦 GitHub Template**：快速複製專案，立即開始使用
 - **💡 程式碼範例**：內建 TypeScript 程式碼片段
@@ -110,7 +110,7 @@ npm run dev
 
 ```markdown
 ---
-theme: '@cxphoenix/slidev-theme-fhsh-aisp'
+theme: '@cxphoenix/slidev-theme-fhsh-isiphs-universal'
 title: 你的簡報標題
 drawings:
   persist: false
@@ -237,7 +237,7 @@ flowchart LR
 
 ```markdown
 ---
-theme: '@cxphoenix/slidev-theme-fhsh-aisp'
+theme: '@cxphoenix/slidev-theme-fhsh-isiphs-universal'
 # 其他主題選項...
 ---
 ```
@@ -335,6 +335,53 @@ DEBUG=slidev* pnpm dev
 - [Markdown 語法指南](https://www.markdownguide.org)
 - [Vue.js 官方教學](https://vuejs.org/tutorial/)
 - [Slidev 範例集](https://github.com/slidevjs/slidev/tree/main/demo)
+
+---
+
+## 📝 CHANGELOG
+
+### Version 1.2.0 (2025-09-30)
+
+#### 🎨 專案重構
+- ✨ 專案名稱更新：從 `slidev-aisp-template` 更名為 `slidev-fhsh-isiphs-template`
+- 🏷️ 新增版本號 `1.2.0`
+
+#### 📦 依賴套件更新
+
+**🔄 主題套件變更**
+- 🔄 從 `@cxphoenix/slidev-theme-fhsh-aisp@1.2.0` 更換為 `@cxphoenix/slidev-theme-fhsh-isiphs-universal@1.0.1`
+- 💡 採用全新的 ISiPHS Universal 主題系統
+
+**⬆️ 套件升級**
+- ⬆️ `@slidev/cli`: `52.1.0` → `52.2.4`
+- ⬆️ `vue`: `3.5.18` → `3.5.22`
+- ⬆️ `playwright-chromium`: `1.55.0` → `1.55.1`
+
+**⬇️ 套件降級**
+- ⬇️ `@cxphoenix/slidev-addon-python-runner`: `1.0.0` → `0.5.0`
+  - 配合新主題系統調整版本
+
+**🔒 版本鎖定**
+- 📌 所有依賴改為精確版本（移除 `^` 符號）
+- 🎯 確保建置環境一致性
+
+**🗑️ 移除不需要的套件**
+- ❌ 移除 `@slidev/theme-default`
+- ❌ 移除 `@slidev/theme-seriph`
+
+#### 🧹 檔案清理
+- 🗑️ 刪除 `public/fonts/edukai-5.0.ttf` 字型檔案
+- 🗑️ 刪除 `styles/index.css` 樣式檔案
+- ✨ 新增 `styles/.gitkeep` 保留目錄結構
+
+#### ⚡ 套件管理器
+- 📈 pnpm lockfile 格式從 `6.0` 升級至 `9.0`
+- 🔧 改善依賴管理效能
+
+#### 📚 文件更新
+- 📖 更新 README.md 中所有主題引用
+- 🏷️ 更新 Badges 版本資訊
+- ✏️ 修正專案名稱和描述
 
 ---
 
