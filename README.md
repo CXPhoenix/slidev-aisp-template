@@ -428,16 +428,25 @@ print(f"{name} 今年 {age} 歲，住在 {city}")
 
 Judge Mode 可以自動執行測試案例並比對輸出結果，適合作業評分與自我練習。
 
+測試資料請放在 `/public/{python.judge.dir || judge}/{inputs,outputs}/*.{in,out}` 中，
+
+`python.judge.dir` 預設為 `judge`；
+
+`.in` 跟 `.out` 並非必要副檔名，但需要注意順序必須對應。
+
 #### 設定測試案例
 
 ```markdown
 ---
 python:
   judge:
-    - input: "5\n3"
-      output: "8"
-    - input: "10\n20"
-      output: "30"
+    dir: "judge"
+    inputs:
+      - 1.in
+      - 2.in
+    outputs:
+      - 1.out
+      - 2.out
 ---
 
 ```python {monaco-run}
